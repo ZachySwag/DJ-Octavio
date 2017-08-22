@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-const TOKEN = "MzM0Njc0MzMxNzUxOTQwMDk2.DFGbkA.zZQJvKrTbspebs65u_1s6Sy3BAk";
+const TOKEN = "MzQ5MzU2NDE1NjQwNjY2MTE0.DH4ipw.cSPIYjCXzjOLIHI1Pk-6m2JSM-M";
 const PREFIX = "$";
 
 var bot = new Discord.Client();
@@ -11,9 +11,9 @@ bot.on("ready", function() {
 });
 
 bot.on("guildMemberAdd", function(member) {
-  member.guild.channels.find("name", "general-chat").sendMessage(member.toString() + " Welcome to the NintenTalk Official Discord! We're glad to have you here! Type \"$help\" if you need anything! You now have the role of Member, and you have basic permissions.")
+  member.guild.channels.find("name", "general-chat").sendMessage(member.toString() + " Welcome to the Official Inkopolis Heroes Discord! We're glad to have you here! Type \"$help\" if you need anything. Please read #rules so you'll be good to go. You have been givem the role of Non-Member, and you have basic permissions. If you would like to be a Member, just let an Admin know if you play Splatoon 1 or 2. If you don't, you will stay as a Non-Member. Thanks for joining the Discord! You'll be happy you joined!")
 
-  member.addRole(member.guild.roles.find("name", "(Members) The Freshest Squids"));
+  member.addRole(member.guild.roles.find("name", "(Non-Members) Salmonoid Chum"));
 });
 
 bot.on ("message", function(message) {
@@ -27,11 +27,8 @@ bot.on ("message", function(message) {
     case "hello":
       message.channel.sendMessage("Hey " + message.author.toString() + "! What's up?? Having a good day? :thinking:");
       break;
-    case "e":
+    case "memes":
       message.channel.sendMessage("england is my city");
-      break;
-    case "twitter":
-      message.channel.sendMessage("Check out NintenTalk's Twitter here to get all the latest updates for the channel! https://twitter.com/NintenTalk");
       break;
     case "info":
       message.channel.sendMessage(message.author.toString() + " I am the very best bot, like no bot ever was. I was programmed by a boy who caught them all. (No not Ash Ketchum)");
@@ -41,7 +38,7 @@ bot.on ("message", function(message) {
       var embed = new Discord.RichEmbed()
         .addField("$hello:", "Say hi to me!")
         .addField("$info:", "Find out who I am!")
-        .addField("$twitter:", "Get a link to NintenTalk's official twitter!");
+        .addField("$memes:", "Get a free meme! fresh and hot!");
       message.channel.sendEmbed(embed);
       break;
     default:
