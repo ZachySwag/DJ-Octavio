@@ -5,12 +5,6 @@ const PREFIX = "$";
 
 var bot = new Discord.Client();
 
-var meemees = Math.floor(Math.random() * 2);
-
-function randomWholeNum() {
-  return Math.random();
-}
-
 bot.on("ready", function() {
   console.log("I am ready");
   
@@ -34,13 +28,7 @@ bot.on ("message", function(message) {
       message.channel.sendMessage("Hey " + message.author.toString() + "! What's up?? Having a good day? :thinking:");
       break;
     case "memes":
-      randomWholeNum();
-      if meemees == 1 {
-        message.channel.sendMessage("england is my city");
-      };
-      if meemees == 2 {
-        message.channel.sendMessage("Is mayonaise an instument?");
-      };
+      message.channel.sendMessage("england is my city");
       break;
     case "info":
       message.channel.sendMessage(message.author.toString() + " I am the very best bot, like no bot ever was. I was programmed by a boy who caught them all. (No not Ash Ketchum)");
