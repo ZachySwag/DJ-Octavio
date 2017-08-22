@@ -35,10 +35,10 @@ bot.on ("message", function(message) {
       break;
     case "memes":
       randomWholeNum();
-      if meemees = 1 {
+      if meemees == 1 {
         message.channel.sendMessage("england is my city");
       }
-      if meemees = 2 {
+      if meemees == 2 {
         message.channel.sendMessage("Is mayonaise an instument?");
       }
       break;
