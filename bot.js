@@ -37,10 +37,10 @@ bot.on ("message", function(message) {
       randomWholeNum();
       if meemees == 1 {
         message.channel.sendMessage("england is my city");
-      }
+      };
       if meemees == 2 {
         message.channel.sendMessage("Is mayonaise an instument?");
-      }
+      };
       break;
     case "info":
       message.channel.sendMessage(message.author.toString() + " I am the very best bot, like no bot ever was. I was programmed by a boy who caught them all. (No not Ash Ketchum)");
