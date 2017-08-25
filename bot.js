@@ -11,7 +11,7 @@ bot.on("ready", function() {
 });
 
 bot.on("guildMemberAdd", function(member) {
-  member.guild.channels.find("name", "general-chat").sendMessage(member.toString() + " Welcome to the Official Inkopolis Heroes Discord! We're glad to have you here! Type \"$help\" if you need anything. Please read " + channels.rules + " so you'll be good to go. You have been givem the role of Non-Member, and you have basic permissions. If you would like to be a Member, just let an Admin know if you play Splatoon 1 or 2. If you don't, you will stay as a Non-Member. Thanks for joining the Discord! You'll be happy you joined!")
+  member.guild.channels.find("name", "general-chat").sendMessage(member.toString() + " Welcome to the Official Inkopolis Heroes Discord! We're glad to have you here! Type \"$help\" if you need anything. Please read so you'll be good to go. You have been givem the role of Non-Member, and you have basic permissions. If you would like to be a Member, just let an Admin know if you play Splatoon 1 or 2. If you don't, you will stay as a Non-Member. Thanks for joining the Discord! You'll be happy you joined!")
 
   member.addRole(member.guild.roles.find("name", "(Non-Members) Salmonoid Chum"));
 });
